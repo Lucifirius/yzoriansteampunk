@@ -1,0 +1,267 @@
+Version 4.105
+
+Fixed an error in hooks/recv_commands/CMDRECV_Cancel.cpp
+
+---------------------------------------
+
+Version 4.104
+
+Fixed non-working hook hooks/interface/stats_panel_display
+
+---------------------------------------
+
+Version 4.103
+Unlocked and identified ordersDat[17] as RequirementsOffset
+Added some clues (as comments) for the use of ordersDat 2,3,5 and 12
+Improvements in CMDRECV_Stop.cpp:
+	-better identification of the last parameter of parseRequirementOpcodes()
+	-identification of 006655XX as use of orders_dat::RequirementsOffset[FixedOrderId]
+Changes in receive_command.cpp:
+	-changed the name order to orderId for clarity
+	-renamed "u32 function_0049A480()" to "bool CanTargetSelf()"
+	-replaced the call of CanTargetSelf() with fully modifiable code
+	(because void receive_command() is the only function that use it
+	so there was no need for a hook)
+	
+---------------------------------------
+
+Version 4.102
+-Fixed a potential source of bug/error in hooks/interface/buttonsets.cpp
+-Fixed an error in hooks/utils/utils.cpp
+-Unlocked and gave the proper type to unitsDat[37] (AddonPlacement) in scbwdata.h
+-Added a development trick and removed version number in definitions.h
+-Added CMDRECV_Build hooks
+
+---------------------------------------
+
+Version 4.101
+-Added void statbtn_BIN_CustomCtrlID(BinDlg* dialog) to hooks/interface/buttonsets hooks
+-Minor changes in hooks/interface/buttonsets hooks
+-Fixed an error in hooks/recv_commands/CMDRECV_Morph_inject.cpp
+-Minor comment added on stack_placeholder in hooks/utils/utils.cpp
+
+---------------------------------------
+
+Version 4.100 (big update)
+
+-Rewritten BinDlg structure to take more in account its variable content
+-Modified various files to adapt to the changes of the BinDlg structure
+
+-Fixed an error in hooks/interface/buttonsets.cpp (inverted mouseX and mouseY, though never saw an issue from that ingame)
+-Minor changes to hooks/orders/building_making/building_terran.cpp (comments, variables names...)
+-Fixed the .h include in hooks/orders/spells/hallucination_spell.cpp (somehow had no bad effect anyways)
+-Minor changes to hooks/orders/unit_making/unit_train.cpp (comments, variables names...)
+-Fixed an error in hooks/transfer_tech_upgrades_inject.cpp (wrong function call in injected, effect surprisingly never seen ingame)
+
+-Added void InitializeDialog(BinDlg* dialog, void* dlgFunc) //00419D20 to hooks/utils Utils hooks.
+-Added Mind Control spell order hook
+
+-Minor changes and fixes
+
+---------------------------------------
+
+Version 4.028
+-cosmetic minor change in hooks/give_unit_inject.cpp
+-new playersSelections variable available from SCBW/scbwdata.h (used in utils hooks)
+-new Utils hooks (bool unit_IsStandardAndMovable(CUnit* unit) and CUnit* getActivePlayerFirstSelection())
+
+---------------------------------------
+
+Version 4.027
+-Fixed an error in getLarvaeUnitsFromList from hooks/interface/select_larva.cpp
+-Added the missing lines in initialize.cpp preventing Select Larva hooks to be used
+-Fixed comments for getMovableState() in SCBW/structures/CUnit.cpp (also added some asm info somewhere else)
+-Added some asm info for getAngle() in SCBW/api.cpp
+-Minor change in the way unit->getMovableState() is used/commented in some files
+-Cleaned old comments and fixed an error in hooks/spider_mine.cpp
+-Added Repair order hook
+-Added Stats panel display hook
+
+---------------------------------------
+
+Version 4.026
+-Fixed some minor (no effects on testing) mistakes in hooks/interface/selection_inject.cpp
+-added the select_larva hooks
+-Minor cosmetics changes
+
+---------------------------------------
+
+Version 4.025
+-Fixed another mistake in hooks/orders/infestation.cpp (caused Issue #30)
+-Minor changes in helper functions for the same hook
+
+---------------------------------------
+
+Version 4.024
+-Fixed a major mistake in hooks/orders/infestation.cpp (caused Issue #29)
+-Various minor fix in hooks/orders/infestation.cpp
+
+---------------------------------------
+
+Version 4.023
+
+Fixed an error in CUnit.cpp reduceDefensiveMatrixHp function causing
+defensive matrix overlay to never disappear
+
+---------------------------------------
+
+Version 4.022
+Fixed lots of error in Recharge Shields hook, making it working properly
+
+---------------------------------------
+
+Version 4.021
+-minor change in hooks\orders\building_making\building_terran_inject.cpp
+-improvement in hooks\orders\building_making\make_nydus_exit.cpp (identification of code)
+-minor change in hooks\recv_commands\burrow_tech.cpp
+-fixed the broken Cloak Nearby Units hook
+-added the CMDRECV_Stop hooks
+-added the CMDRECV_Cancel hooks
+
+---------------------------------------
+
+Version 4.020
+-fix mistakes that caused a crash in hooks/orders/unit_making/unit_train.cpp
+-removed a comment in hooks/recv_commands/train_cmd_receive.cpp
+-improvements and fixes in hooks/create_init_units.cpp
+-added CMDRECV_MergeArchon hook
+-added CMDRECV_Morph hook
+
+---------------------------------------
+
+Version 4.019
+-minor fixes in train_cmd_receive.cpp
+-moved burrowed tech hooks into recv_commands folder
+-added CMDRECV_SiegeTank hooks
+-disabled cloak nearby units hook (broken)
+
+---------------------------------------
+
+Version 4.018
+
+-added the recv_commands folder
+-moved receive command hook to the new folder
+-added new Train Command Receive hook
+
+---------------------------------------
+
+Version 4.017
+
+-identified some unknown content in create init units hook
+-added the Give Unit hook
+
+---------------------------------------
+
+Version 4.016
+
+-fix an error in burrow tech hook.
+-removed useless content in Load/Unload proc.
+-added startPositions to scbwdata.h.
+-add Create Initial Units hooks.
+
+---------------------------------------
+
+Version 4.015
+
+-add new Receive Command hook
+
+---------------------------------------
+
+Version 4.014
+
+-renamed a function based on effect in attack orders hook.
+-fix a wrong function use in Feedback spell hook.
+-fix an error in Weapon/Spell hit hook.
+-fix a comment in burrow tech injector file.
+-fixes in function MoveScreenToUnit of api.cpp.
+-unlock an entry in scbwdata.h for a future function.
+
+---------------------------------------
+
+Version 4.013
+-resync files of Weapon/Spell Hit hook with offline version (missing bugfix)
+
+---------------------------------------
+
+Version 4.012
+-fix in Medic Orders hook
+
+---------------------------------------
+
+Version 4.011
+-minor fix in hallucination spell hook
+-major fixing in burrow tech hooks (weren't working at all)
+-add Buttons Conditions hooks
+
+----------------------------------------
+
+Version 4.010
+-fix a mistake in hallucination spell hook
+-fix energy cost in recall spell hook
+
+----------------------------------------
+
+Version 4.009
+-fix a mistake in Consume hit in wpnspellhit.cpp
+
+----------------------------------------
+
+Version 4.008
+-add Hallucination spell hook
+-add Feedback spell hook
+-unit_train.cpp: added a missing code part, may fix a bug
+-wpnspellhit.cpp: fix an error that could crash the game when hallucinated units attack
+-update_unit_state.cpp: removed useless helper
+-minor fixes
+
+----------------------------------------
+
+Version 4.007
+-Add performAnotherOrder() to CUnit functions
+-Add Medic hooks
+-minor fixes
+
+----------------------------------------
+
+Version 4.006
+-adding Burrow tech hooks
+-adding Research/Upgrade orders hooks
+-removed some useless include
+
+----------------------------------------
+
+Version 4.005
+adding Nuke Orders hooks
+
+----------------------------------------
+
+Version 4.004
+-adding Load/Unload orders hooks
+-adding Load/Unload proc hooks
+
+----------------------------------------
+
+Version 4.003:
+adding Unit_train hooks
+
+----------------------------------------
+
+
+Version 4.002:
+
+-adding Building_Protoss hooks
+-fix a param type in Building_Terran helper function
+-modify a more identified member of CImage (2 u8 to 1 u16)
+
+----------------------------------------
+
+Version 4.001:
+
+-fix a bug where some const CUnit* survived their removal
+-adding Building_Terran hooks
+
+----------------------------------------
+
+Version 4.000:
+
+Adding Die_Order hook

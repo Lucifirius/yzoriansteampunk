@@ -1,0 +1,226 @@
+﻿Build started 5/1/2019 4:06:26 AM.
+     1>Project "C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\GPTP.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\GPTP.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\\" /nologo /W3 /WX- /Ox /Ob2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D GPTP_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt hooks\game_hooks.cpp
+         game_hooks.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\\" /nologo /W3 /WX- /Ox /Ob2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D GPTP_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\ai_common1.obj" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt AI\ai_common.cpp
+         ai_common.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\\" /nologo /W3 /WX- /Ox /Ob2 /Oi /Ot /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D GPTP_EXPORTS /D _WINDLL /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\psi_field1.obj" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt hooks\psi_field.cpp
+         psi_field.cpp
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\GPTP.dll) does not match the Linker's OutputFile property value (C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\patch\GPTP.qdp). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.qdp). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\patch\GPTP.qdp" /INCREMENTAL:NO /NOLOGO version.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\plugin.def" /MANIFEST /ManifestFile:"Release\GPTP.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\GPTP.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\GPTP.lib" /MACHINE:X86 /DLL Release\attack_orders.obj
+         Release\attack_orders_inject.obj
+         Release\btns_cond.obj
+         Release\btns_cond_inject.obj
+         Release\building_morph.obj
+         Release\building_morph_inject.obj
+         Release\building_protoss.obj
+         Release\building_protoss_inject.obj
+         Release\building_terran.obj
+         Release\building_terran_inject.obj
+         Release\burrow_tech.obj
+         Release\burrow_tech_inject.obj
+         Release\buttonsets.obj
+         Release\buttonsets_inject.obj
+         Release\cast_order.obj
+         Release\cast_order_inject.obj
+         Release\CMDRECV_Build.obj
+         Release\CMDRECV_Build_inject.obj
+         Release\CMDRECV_Cancel.obj
+         Release\CMDRECV_Cancel_inject.obj
+         Release\CMDRECV_MergeArchon.obj
+         Release\CMDRECV_MergeArchon_inject.obj
+         Release\CMDRECV_Morph.obj
+         Release\CMDRECV_Morph_inject.obj
+         Release\CMDRECV_SiegeTank.obj
+         Release\CMDRECV_SiegeTank_inject.obj
+         Release\CMDRECV_Stop.obj
+         Release\CMDRECV_Stop_inject.obj
+         Release\configure.obj
+         Release\create_init_units.obj
+         Release\create_init_units_inject.obj
+         Release\die_order.obj
+         Release\die_order_inject.obj
+         Release\enter_nydus.obj
+         Release\enter_nydus_inject.obj
+         Release\feedback_spell.obj
+         Release\feedback_spell_inject.obj
+         Release\give_unit.obj
+         Release\give_unit_inject.obj
+         Release\hallucination_spell.obj
+         Release\hallucination_spell_inject.obj
+         Release\use_tech.obj
+         Release\use_tech_inject.obj
+         Release\weapon_effect.obj
+         Release\weapon_effect_inject.obj
+         Release\hook_tools.obj
+         Release\infestation.obj
+         Release\infestation_inject.obj
+         Release\initialize.obj
+         Release\larva_creep_spawn.obj
+         Release\larva_creep_spawn_inject.obj
+         Release\liftland.obj
+         Release\liftland_inject.obj
+         Release\load_unload_orders.obj
+         Release\load_unload_orders_inject.obj
+         Release\load_unload_proc.obj
+         Release\load_unload_proc_inject.obj
+         Release\logger.obj
+         Release\make_nydus_exit.obj
+         Release\make_nydus_exit_inject.obj
+         Release\medic_orders.obj
+         Release\medic_orders_inject.obj
+         Release\merge_units.obj
+         Release\merge_units_inject.obj
+         Release\mindcontrol_spell.obj
+         Release\mindcontrol_spell_inject.obj
+         Release\nuke_orders.obj
+         Release\nuke_orders_inject.obj
+         Release\Player.obj
+         Release\Plugin.obj
+         Release\plugin_main.obj
+         Release\recall_spell.obj
+         Release\recall_spell_inject.obj
+         Release\receive_command.obj
+         Release\receive_command_inject.obj
+         Release\repair_order.obj
+         Release\repair_order_inject.obj
+         Release\research_upgrade_orders.obj
+         Release\research_upgrade_orders_inject.obj
+         Release\select_larva.obj
+         Release\select_larva_inject.obj
+         Release\selection.obj
+         Release\selection_inject.obj
+         Release\siege_transform.obj
+         Release\siege_transform_inject.obj
+         Release\stats_panel_display.obj
+         Release\stats_panel_display_inject.obj
+         Release\stopholdpos_orders.obj
+         Release\stopholdpos_orders_inject.obj
+         Release\train_cmd_receive.obj
+         Release\train_cmd_receive_inject.obj
+         Release\unit_morph.obj
+         Release\unit_morph_inject.obj
+         Release\unit_train.obj
+         Release\unit_train_inject.obj
+         Release\utils.obj
+         Release\utils_inject.obj
+         Release\wireframe.obj
+         Release\wireframe_inject.obj
+         Release\wpnspellhit.obj
+         Release\wpnspellhit_inject.obj
+         Release\api.obj
+         Release\apply_upgrade_flags.obj
+         Release\apply_upgrade_flags_inject.obj
+         Release\armor_bonus.obj
+         Release\armor_bonus_inject.obj
+         Release\attack_priority.obj
+         Release\attack_priority_inject.obj
+         Release\Bitmap.obj
+         Release\building_morph.obj
+         Release\building_morph_inject.obj
+         Release\bunker_hooks.obj
+         Release\bunker_hooks_inject.obj
+         Release\CImage.obj
+         Release\cloak_nearby_units.obj
+         Release\cloak_nearby_units_inject.obj
+         Release\cloak_tech.obj
+         Release\cloak_tech_inject.obj
+         Release\CSprite.obj
+         Release\CUnit.obj
+         Release\dark_swarm.obj
+         Release\defensive_matrix.obj
+         Release\detector.obj
+         Release\detector_inject.obj
+         Release\disruption_web.obj
+         Release\draw_hook.obj
+         Release\emp_shockwave.obj
+         Release\ensnare.obj
+         Release\feedback.obj
+         Release\Font.obj
+         Release\game_hooks.obj
+         Release\game_hooks_inject.obj
+         Release\graphics.obj
+         Release\graphics_errors.obj
+         Release\hallucination.obj
+         Release\harvest.obj
+         Release\harvest_inject.obj
+         Release\irradiate.obj
+         Release\launch_nuke.obj
+         Release\lockdown.obj
+         Release\maelstrom.obj
+         Release\max_energy.obj
+         Release\max_energy_inject.obj
+         Release\mind_control.obj
+         Release\optical_flare.obj
+         Release\parasite.obj
+         Release\plague.obj
+         Release\psi_field_inject.obj
+         Release\psi_field_util.obj
+         Release\psi_storm.obj
+         Release\rally_point.obj
+         Release\rally_point_inject.obj
+         Release\recall.obj
+         Release\recharge_shields.obj
+         Release\recharge_shields_inject.obj
+         Release\restoration.obj
+         Release\Shape.obj
+         Release\sight_range.obj
+         Release\sight_range_inject.obj
+         Release\spawn_broodlings.obj
+         Release\spellcasting.obj
+         Release\spellcasting_inject.obj
+         Release\spider_mine.obj
+         Release\spider_mine_inject.obj
+         Release\stasis_field.obj
+         Release\stim_packs.obj
+         Release\stim_packs_inject.obj
+         Release\tech_target_check.obj
+         Release\tech_target_check_inject.obj
+         Release\transfer_tech_upgrades.obj
+         Release\transfer_tech_upgrades_inject.obj
+         Release\unit_destructor_special.obj
+         Release\unit_morph.obj
+         Release\unit_morph_inject.obj
+         Release\unit_speed.obj
+         Release\unit_speed_inject.obj
+         Release\UnitFinder.obj
+         Release\update_status_effects.obj
+         Release\update_status_effects_inject.obj
+         Release\update_unit_state.obj
+         Release\update_unit_state_inject.obj
+         Release\weapon_armor_tooltip.obj
+         Release\weapon_armor_tooltip_inject.obj
+         Release\weapon_cooldown.obj
+         Release\weapon_cooldown_inject.obj
+         Release\weapon_damage.obj
+         Release\weapon_damage_inject.obj
+         Release\weapon_fire.obj
+         Release\weapon_fire_inject.obj
+         Release\weapon_range.obj
+         Release\weapon_range_inject.obj
+         Release\yamato_gun.obj
+         Release\ai_common1.obj
+         Release\psi_field1.obj
+     1>Release\building_morph.obj : warning LNK4042: object specified more than once; extras ignored
+     1>Release\building_morph_inject.obj : warning LNK4042: object specified more than once; extras ignored
+     1>Release\unit_morph.obj : warning LNK4042: object specified more than once; extras ignored
+     1>Release\unit_morph_inject.obj : warning LNK4042: object specified more than once; extras ignored
+            Creating library C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\GPTP.lib and object C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\GPTP.exp
+         Generating code
+         Finished generating code
+         GPTP.vcxproj -> C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\GPTP.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\Release\patch\GPTP.qdp;#2" /manifest Release\GPTP.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\GPTP.unsuccessfulbuild".
+         Touching "Release\GPTP.lastbuildstate".
+     1>Done Building Project "C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Framework\Framework plugin source\GPTP.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:56.60
