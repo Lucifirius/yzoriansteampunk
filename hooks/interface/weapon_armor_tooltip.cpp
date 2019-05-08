@@ -87,7 +87,7 @@ const char* getDamageTooltipString(u8 weaponId, CUnit* unit, u16 entryStrIndex) 
 	switch(damageType) {
 	case DamageType::Normal:
 		//Normal type damage uses green text
-		typeName = "\017Normal\002";
+		typeName = "\017Physical\002";
 		break;
 	case DamageType::Explosive:
 		//Explosive type damage uses orange text
@@ -103,7 +103,7 @@ const char* getDamageTooltipString(u8 weaponId, CUnit* unit, u16 entryStrIndex) 
 		break;
 	case DamageType::IgnoreArmor:
 		//Ignore Armor type damage uses white text
-		typeName = "\004Ignores Armor\002";
+		typeName = "\004Magic\002";
 		break;
 	default:
 		typeName = "None";
