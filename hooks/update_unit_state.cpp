@@ -145,11 +145,6 @@ void updateUnitStateHook(CUnit* unit) {
 	if (unit->id == UnitId::zergling || unit->id == UnitId::Hero_DevouringOne)
 		if (unit->groundWeaponCooldown == 0)
 		  unit->orderQueueTimer = 0;
-	//KYSXD interceptors and worker also move without delay
-  if (unit->id == UnitId::interceptor
-    ||(units_dat::BaseProperty[unit->id] & UnitProperty::Worker)) {
-    unit->orderQueueTimer = 0;
-  }
 
 	//Clear the healing flag every frame
 	unit->isBeingHealed = 0;

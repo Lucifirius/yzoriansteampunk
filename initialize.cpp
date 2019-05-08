@@ -245,8 +245,8 @@ BOOL WINAPI Plugin::InitializePlugin(IMPQDraftServer *lpMPQDraftServer) {
 	hooks::injectStimPacksHooks();/*
 	hooks::injectTechTargetCheckHooks();
 	hooks::injectTransferTechAndUpgradesHooks();
-	hooks::injectUnitSpeedHooks();
-	hooks::injectUpdateStatusEffects();*/
+	hooks::injectUnitSpeedHooks();*/
+	hooks::injectUpdateStatusEffects();
 	hooks::injectUpdateUnitState();/*
 	hooks::injectWeaponCooldownHook();
 	hooks::injectWeaponDamageHook();*/
@@ -256,8 +256,8 @@ BOOL WINAPI Plugin::InitializePlugin(IMPQDraftServer *lpMPQDraftServer) {
 	hooks::injectPsiFieldHooks();
 	
 	hooks::injectArmorBonusHook();
-	hooks::injectSightRangeHook();
-	hooks::injectUnitMaxEnergyHook();
+	hooks::injectSightRangeHook();*/
+	hooks::injectUnitMaxEnergyHook();/*
 	hooks::injectWeaponRangeHooks();*/
 	
 	hooks::injectUnitTooltipHook();/*

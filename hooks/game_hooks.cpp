@@ -11,6 +11,12 @@ const int hyperTrigger = 0x006509A0;
 namespace {
 	bool unitHasPathToDestOnGround(const CUnit *unit, int x, int y);
 	bool unitHasPathToUnitOnGround(const CUnit *unit, CUnit *target);
+	inline void manageUnitStatusFlags(CUnit *unit, u32 flag, bool status);
+}
+
+namespace plugins {
+	void runZealotCharge(CUnit *unit);
+	bool chargeTargetInRange(const CUnit *fenix_zealot);
 }
 namespace hooks {
 
@@ -32,7 +38,7 @@ bool nextFrame() {
 
 		//Loop through all visible units in the game.
 		for (CUnit *unit = *firstVisibleUnit; unit; unit = unit->link.next) {
-			//Write your code here
+			plugins::runZealotCharge(unit);
 		}
 
 		scbw::setInGameLoopState(false);
@@ -104,8 +110,7 @@ namespace plugins {
 	//KYSXD zealot's charge
 	void runZealotCharge(CUnit *unit) {
 		//Check max_energy.cpp and unit_speed.cpp for more info
-		if(unit->id == UnitId::ProtossZealot
-			&& unit->status & UnitStatus::SpeedUpgrade) {
+		if(unit->id == UnitId::fenix_zealot) {
 			//Unit isn't in charge state
 			if(!unit->stimTimer) {
 				if(chargeTargetInRange(unit)) {

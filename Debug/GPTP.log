@@ -1,0 +1,228 @@
+﻿Build started 5/8/2019 3:52:38 AM.
+     1>Project "C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\GPTP.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\GPTP.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\\" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D GPTP_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt hooks\update_unit_state.cpp
+         update_unit_state.cpp
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\GPTP.dll) does not match the Linker's OutputFile property value (C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\patch\GPTP.qdp). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.qdp). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\patch\GPTP.qdp" /INCREMENTAL /NOLOGO version.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\plugin.def" /MANIFEST /ManifestFile:"Debug\GPTP.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\GPTP.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\GPTP.lib" /MACHINE:X86 /DLL Debug\GPTP.dll.embed.manifest.res
+         Debug\attack_orders.obj
+         Debug\attack_orders_inject.obj
+         Debug\btns_cond.obj
+         Debug\btns_cond_inject.obj
+         Debug\building_morph.obj
+         Debug\building_morph_inject.obj
+         Debug\building_protoss.obj
+         Debug\building_protoss_inject.obj
+         Debug\building_terran.obj
+         Debug\building_terran_inject.obj
+         Debug\burrow_tech.obj
+         Debug\burrow_tech_inject.obj
+         Debug\buttonsets.obj
+         Debug\buttonsets_inject.obj
+         Debug\cast_order.obj
+         Debug\cast_order_inject.obj
+         Debug\CMDRECV_Build.obj
+         Debug\CMDRECV_Build_inject.obj
+         Debug\CMDRECV_Cancel.obj
+         Debug\CMDRECV_Cancel_inject.obj
+         Debug\CMDRECV_MergeArchon.obj
+         Debug\CMDRECV_MergeArchon_inject.obj
+         Debug\CMDRECV_Morph.obj
+         Debug\CMDRECV_Morph_inject.obj
+         Debug\CMDRECV_SiegeTank.obj
+         Debug\CMDRECV_SiegeTank_inject.obj
+         Debug\CMDRECV_Stop.obj
+         Debug\CMDRECV_Stop_inject.obj
+         Debug\configure.obj
+         Debug\create_init_units.obj
+         Debug\create_init_units_inject.obj
+         Debug\die_order.obj
+         Debug\die_order_inject.obj
+         Debug\enter_nydus.obj
+         Debug\enter_nydus_inject.obj
+         Debug\feedback_spell.obj
+         Debug\feedback_spell_inject.obj
+         Debug\give_unit.obj
+         Debug\give_unit_inject.obj
+         Debug\hallucination_spell.obj
+         Debug\hallucination_spell_inject.obj
+         Debug\use_tech.obj
+         Debug\use_tech_inject.obj
+         Debug\weapon_effect.obj
+         Debug\weapon_effect_inject.obj
+         Debug\hook_tools.obj
+         Debug\infestation.obj
+         Debug\infestation_inject.obj
+         Debug\initialize.obj
+         Debug\larva_creep_spawn.obj
+         Debug\larva_creep_spawn_inject.obj
+         Debug\liftland.obj
+         Debug\liftland_inject.obj
+         Debug\load_unload_orders.obj
+         Debug\load_unload_orders_inject.obj
+         Debug\load_unload_proc.obj
+         Debug\load_unload_proc_inject.obj
+         Debug\logger.obj
+         Debug\make_nydus_exit.obj
+         Debug\make_nydus_exit_inject.obj
+         Debug\medic_orders.obj
+         Debug\medic_orders_inject.obj
+         Debug\merge_units.obj
+         Debug\merge_units_inject.obj
+         Debug\mindcontrol_spell.obj
+         Debug\mindcontrol_spell_inject.obj
+         Debug\nuke_orders.obj
+         Debug\nuke_orders_inject.obj
+         Debug\Player.obj
+         Debug\Plugin.obj
+         Debug\plugin_main.obj
+         Debug\recall_spell.obj
+         Debug\recall_spell_inject.obj
+         Debug\receive_command.obj
+         Debug\receive_command_inject.obj
+         Debug\repair_order.obj
+         Debug\repair_order_inject.obj
+         Debug\research_upgrade_orders.obj
+         Debug\research_upgrade_orders_inject.obj
+         Debug\select_larva.obj
+         Debug\select_larva_inject.obj
+         Debug\selection.obj
+         Debug\selection_inject.obj
+         Debug\siege_transform.obj
+         Debug\siege_transform_inject.obj
+         Debug\stats_panel_display.obj
+         Debug\stats_panel_display_inject.obj
+         Debug\stopholdpos_orders.obj
+         Debug\stopholdpos_orders_inject.obj
+         Debug\train_cmd_receive.obj
+         Debug\train_cmd_receive_inject.obj
+         Debug\unit_morph.obj
+         Debug\unit_morph_inject.obj
+         Debug\unit_train.obj
+         Debug\unit_train_inject.obj
+         Debug\utils.obj
+         Debug\utils_inject.obj
+         Debug\wireframe.obj
+         Debug\wireframe_inject.obj
+         Debug\wpnspellhit.obj
+         Debug\wpnspellhit_inject.obj
+         Debug\api.obj
+         Debug\apply_upgrade_flags.obj
+         Debug\apply_upgrade_flags_inject.obj
+         Debug\armor_bonus.obj
+         Debug\armor_bonus_inject.obj
+         Debug\attack_priority.obj
+         Debug\attack_priority_inject.obj
+         Debug\Bitmap.obj
+         Debug\building_morph.obj
+         Debug\building_morph_inject.obj
+         Debug\bunker_hooks.obj
+         Debug\bunker_hooks_inject.obj
+         Debug\CImage.obj
+         Debug\cloak_nearby_units.obj
+         Debug\cloak_nearby_units_inject.obj
+         Debug\cloak_tech.obj
+         Debug\cloak_tech_inject.obj
+         Debug\CSprite.obj
+         Debug\CUnit.obj
+         Debug\dark_swarm.obj
+         Debug\defensive_matrix.obj
+         Debug\detector.obj
+         Debug\detector_inject.obj
+         Debug\disruption_web.obj
+         Debug\draw_hook.obj
+         Debug\emp_shockwave.obj
+         Debug\ensnare.obj
+         Debug\feedback.obj
+         Debug\Font.obj
+         Debug\game_hooks.obj
+         Debug\game_hooks_inject.obj
+         Debug\graphics.obj
+         Debug\graphics_errors.obj
+         Debug\hallucination.obj
+         Debug\harvest.obj
+         Debug\harvest_inject.obj
+         Debug\irradiate.obj
+         Debug\launch_nuke.obj
+         Debug\lockdown.obj
+         Debug\maelstrom.obj
+         Debug\max_energy.obj
+         Debug\max_energy_inject.obj
+         Debug\mind_control.obj
+         Debug\optical_flare.obj
+         Debug\parasite.obj
+         Debug\plague.obj
+         Debug\psi_field_inject.obj
+         Debug\psi_field_util.obj
+         Debug\psi_storm.obj
+         Debug\rally_point.obj
+         Debug\rally_point_inject.obj
+         Debug\recall.obj
+         Debug\recharge_shields.obj
+         Debug\recharge_shields_inject.obj
+         Debug\restoration.obj
+         Debug\Shape.obj
+         Debug\sight_range.obj
+         Debug\sight_range_inject.obj
+         Debug\spawn_broodlings.obj
+         Debug\spellcasting.obj
+         Debug\spellcasting_inject.obj
+         Debug\spider_mine.obj
+         Debug\spider_mine_inject.obj
+         Debug\stasis_field.obj
+         Debug\stim_packs.obj
+         Debug\stim_packs_inject.obj
+         Debug\tech_target_check.obj
+         Debug\tech_target_check_inject.obj
+         Debug\transfer_tech_upgrades.obj
+         Debug\transfer_tech_upgrades_inject.obj
+         Debug\unit_destructor_special.obj
+         Debug\unit_morph.obj
+         Debug\unit_morph_inject.obj
+         Debug\unit_speed.obj
+         Debug\unit_speed_inject.obj
+         Debug\UnitFinder.obj
+         Debug\update_status_effects.obj
+         Debug\update_status_effects_inject.obj
+         Debug\update_unit_state.obj
+         Debug\update_unit_state_inject.obj
+         Debug\weapon_armor_tooltip.obj
+         Debug\weapon_armor_tooltip_inject.obj
+         Debug\weapon_cooldown.obj
+         Debug\weapon_cooldown_inject.obj
+         Debug\weapon_damage.obj
+         Debug\weapon_damage_inject.obj
+         Debug\weapon_fire.obj
+         Debug\weapon_fire_inject.obj
+         Debug\weapon_range.obj
+         Debug\weapon_range_inject.obj
+         Debug\yamato_gun.obj
+         Debug\ai_common1.obj
+         Debug\psi_field1.obj
+     1>Debug\building_morph.obj : warning LNK4042: object specified more than once; extras ignored
+     1>Debug\building_morph_inject.obj : warning LNK4042: object specified more than once; extras ignored
+     1>Debug\unit_morph.obj : warning LNK4042: object specified more than once; extras ignored
+     1>Debug\unit_morph_inject.obj : warning LNK4042: object specified more than once; extras ignored
+            Creating library C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\GPTP.lib and object C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\GPTP.exp
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\GPTP.dll.embed.manifest" /manifest Debug\GPTP.dll.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         GPTP.vcxproj -> C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\Debug\GPTP.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\GPTP.unsuccessfulbuild".
+         Touching "Debug\GPTP.lastbuildstate".
+     1>Done Building Project "C:\Users\jacob\Dropbox\starcraft_modding\GPTP\Yzoria Plugin Source\GPTP.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.30
