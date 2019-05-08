@@ -197,8 +197,8 @@ BOOL WINAPI Plugin::InitializePlugin(IMPQDraftServer *lpMPQDraftServer) {
 	hooks::injectStopHoldPosOrdersHooks();
 	hooks::injectRecallSpellHooks();
 	hooks::injectEnterNydusHooks();
-	hooks::injectCastOrderHooks();*/
-	hooks::injectWpnSpellHitHooks();/*
+	hooks::injectCastOrderHooks();
+	hooks::injectWpnSpellHitHooks();
 	hooks::injectBuildingMorphHooks();
 	hooks::injectMakeNydusExitHook();
 	hooks::injectUnitMorphHooks();
@@ -241,23 +241,23 @@ BOOL WINAPI Plugin::InitializePlugin(IMPQDraftServer *lpMPQDraftServer) {
 	hooks::injectHarvestResource();
 	hooks::injectRallyHooks();*/
 	/*hooks::injectRechargeShieldsHooks();
-	hooks::injectSpiderMineHooks();*/
-	hooks::injectStimPacksHooks();/*
+	hooks::injectSpiderMineHooks();
+	hooks::injectStimPacksHooks();
 	hooks::injectTechTargetCheckHooks();
 	hooks::injectTransferTechAndUpgradesHooks();
-	hooks::injectUnitSpeedHooks();*/
+	hooks::injectUnitSpeedHooks();
 	hooks::injectUpdateStatusEffects();
-	hooks::injectUpdateUnitState();/*
+	hooks::injectUpdateUnitState();
 	hooks::injectWeaponCooldownHook();
-	hooks::injectWeaponDamageHook();*/
+	hooks::injectWeaponDamageHook();
 	hooks::injectWeaponFireHooks();
 	
-	/*hooks::injectUnitDestructorSpecial();
+	hooks::injectUnitDestructorSpecial();
 	hooks::injectPsiFieldHooks();
 	
 	hooks::injectArmorBonusHook();
-	hooks::injectSightRangeHook();*/
-	hooks::injectUnitMaxEnergyHook();/*
+	hooks::injectSightRangeHook();
+	hooks::injectUnitMaxEnergyHook();
 	hooks::injectWeaponRangeHooks();*/
 	
 	hooks::injectUnitTooltipHook();/*

@@ -103,7 +103,7 @@ const char* getDamageTooltipString(u8 weaponId, CUnit* unit, u16 entryStrIndex) 
 		break;
 	case DamageType::IgnoreArmor:
 		//Ignore Armor type damage uses white text
-		typeName = "\004Magic\002";
+		typeName = "\004Ignores Armor\002";
 		break;
 	default:
 		typeName = "None";

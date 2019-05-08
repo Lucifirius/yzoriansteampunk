@@ -12,6 +12,9 @@ namespace hooks {
 /// Should be equivalent to GetUnitMaxEnergy @ 00491870  
 u16 getUnitMaxEnergyHook(CUnit* const unit) {
 
+	if (units_dat::BaseProperty[unit->id] & UnitProperty::Hero)
+		return ENERGY_INGAME_250;
+
 	switch (unit->id) {
 		case UnitId::science_vessel:
 			if (scbw::getUpgradeLevel(unit->playerId, UpgradeId::TitanReactor))
@@ -56,9 +59,6 @@ u16 getUnitMaxEnergyHook(CUnit* const unit) {
 		case UnitId::dark_archon:
 			if (scbw::getUpgradeLevel(unit->playerId, UpgradeId::ArgusTalisman))
 				return ENERGY_INGAME_250;
-			break;
-		case UnitId::fenix_zealot:
-			return 10 << 8;
 			break;
 	}
 

@@ -86,27 +86,3 @@ u32 getModifiedUnitTurnSpeedHook(CUnit* unit) {
 }
 
 } //hooks
-
-
-	//KYSXD helpers
-namespace {
-	bool chargeTargetInRange(const CUnit *zealot);
-};
-
-	//KYSXD Zealot Charge
-namespace {
-	bool chargeTargetInRange(const CUnit *zealot) {
-	  if (!zealot->orderTarget.unit)
-	    return false;
-	  CUnit *chargeTarget = zealot->orderTarget.unit;
-	  int maxChargeRange = 3 << 5;
-	  int minChargeRange = 16;
-	  int chargeRange = zealot->getDistanceToTarget(zealot->orderTarget.unit);
-	  if (zealot->mainOrderId != OrderId::AttackUnit)
-	    return false;
-	  if (minChargeRange > chargeRange
-	    || chargeRange > maxChargeRange)
-	    return false;
-	  return true;
-	}
-}

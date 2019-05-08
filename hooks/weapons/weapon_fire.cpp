@@ -51,18 +51,11 @@ void fireWeaponHook(CUnit* unit, u8 weaponId) {
 
 	if (weapons_dat::FlingyId[weaponId] != 0)
 		createBullet(weaponId, unit, x, y, unit->playerId, unit->currentDirection1);
-
-	//restoration heal        
-if (weapons_dat::ExplosionType[weaponId] == WeaponEffect::Restoration)
-        {
-            if(unit->orderTarget.unit->id == 34)
-                unit->orderTarget.unit->setHp(unit->orderTarget.unit->hitPoints + 38400);
-            else
-                unit->orderTarget.unit->setHp(unit->orderTarget.unit->hitPoints + 38400);
-        }
 }
 
 } //hooks
+
+
 //-------- Helper function definitions. Do NOT modify! --------//
 
 namespace {
